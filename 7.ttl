@@ -1,0 +1,1198 @@
+@prefix cdf: <https://meta-explorer.pub/cdfood#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+### ========== 菜品 (Recipe) ==========
+
+cdf:DI001 a cdf:Recipe ;
+    cdf:dishId "DI001"^^xsd:string ;
+    dct:title "跷脚牛肉"^^xsd:string ;
+    dct:description "起源于上世纪30年代初的四川乐山，由罗姓老中医创制，以牛杂加中草药熬煮，因食客跷脚而食得名。"^^xsd:string ;
+    cdf:cuisineFlavor "鲜香清爽、微辣"^^xsd:string ;
+    schema:recipeIngredient cdf:IN001, cdf:IN019, cdf:IN020, cdf:IN021, cdf:IN022,
+        cdf:IN023, cdf:IN024, cdf:IN026, cdf:IN030, cdf:IN031, cdf:IN032,
+        cdf:IN042, cdf:IN052, cdf:IN054, cdf:IN055, cdf:IN119, cdf:IN120,
+        cdf:IN121, cdf:IN122, cdf:IN123, cdf:IN124, cdf:IN125, cdf:IN126,
+        cdf:IN127, cdf:IN128 ;
+    cdf:servedAt cdf:R001 .
+
+cdf:DI002 a cdf:Recipe ;
+    cdf:dishId "DI002"^^xsd:string ;
+    dct:title "咸烧白"^^xsd:string ;
+    dct:description "四川传统“三蒸九扣”田席中的经典硬菜，以五花肉配宜宾芽菜蒸制而成，肥而不腻。"^^xsd:string ;
+    cdf:cuisineFlavor "咸鲜醇香"^^xsd:string ;
+    schema:recipeIngredient cdf:IN002, cdf:IN003, cdf:IN026, cdf:IN052, cdf:IN053 ;
+    cdf:servedAt cdf:R002 .
+
+cdf:DI003 a cdf:Recipe ;
+    cdf:dishId "DI003"^^xsd:string ;
+    dct:title "钟水饺"^^xsd:string ;
+    dct:description "1893年由钟燮生在成都荔枝巷创制，以红油、复制甜酱油、蒜泥调味，咸甜微辣。"^^xsd:string ;
+    cdf:cuisineFlavor "咸甜微辣"^^xsd:string ;
+    schema:recipeIngredient cdf:IN027, cdf:IN043, cdf:IN044, cdf:IN045, cdf:IN052, cdf:IN057 ;
+    cdf:associatedWithSkill cdf:H34 ;
+    cdf:servedAt cdf:R003 .
+
+cdf:DI004 a cdf:Recipe ;
+    cdf:dishId "DI004"^^xsd:string ;
+    dct:title "赖汤圆"^^xsd:string ;
+    dct:description "1894年赖元鑫创于成都，以糯米粉包黑芝麻猪油馅，皮薄馅丰，软糯香甜。"^^xsd:string ;
+    cdf:cuisineFlavor "甜润软糯"^^xsd:string ;
+    schema:recipeIngredient cdf:IN004, cdf:IN005, cdf:IN006, cdf:IN052 ;
+    cdf:associatedWithSkill cdf:H35 ;
+    cdf:servedAt cdf:R004 .
+
+cdf:DI005 a cdf:Recipe ;
+    cdf:dishId "DI005"^^xsd:string ;
+    dct:title "麻婆豆腐"^^xsd:string ;
+    dct:description "清同治年间由陈麻婆创于成都万福桥，以豆腐、牛肉末、豆瓣酱、花椒制成，麻辣烫香酥嫩。"^^xsd:string ;
+    cdf:cuisineFlavor "麻辣鲜香"^^xsd:string ;
+    schema:recipeIngredient cdf:IN007, cdf:IN008, cdf:IN009, cdf:IN010, cdf:IN026, cdf:IN042, cdf:IN054, cdf:IN055 ;
+    cdf:associatedWithSkill cdf:H31 ;
+    cdf:servedAt cdf:R005 .
+
+cdf:DI006 a cdf:Recipe ;
+    cdf:dishId "DI006"^^xsd:string ;
+    dct:title "叶儿粑"^^xsd:string ;
+    dct:description "崇州怀远镇传统小吃，用糯米粉包裹芽菜肉馅或芝麻糖馅，外裹簝叶蒸熟，清香软糯。"^^xsd:string ;
+    cdf:cuisineFlavor "清香软糯"^^xsd:string ;
+    schema:recipeIngredient cdf:IN004, cdf:IN003, cdf:IN008, cdf:IN005, cdf:IN006, cdf:IN011, cdf:IN026 ;
+    cdf:associatedWithSkill cdf:H28 .
+
+cdf:DI007 a cdf:Recipe ;
+    cdf:dishId "DI007"^^xsd:string ;
+    dct:title "豆腐帘子"^^xsd:string ;
+    dct:description "怀远三绝之一，将豆浆点浆后拉成薄片晾干，形如帘子，可炒可炖，豆香浓郁。"^^xsd:string ;
+    cdf:cuisineFlavor "豆香清淡"^^xsd:string ;
+    schema:recipeIngredient cdf:IN012, cdf:IN026 ;
+    cdf:associatedWithSkill cdf:H28 .
+
+cdf:DI008 a cdf:Recipe ;
+    cdf:dishId "DI008"^^xsd:string ;
+    dct:title "怀远冻糕"^^xsd:string ;
+    dct:description "怀远三绝之一，以糯米、红糖、猪油蒸制后冷却凝固，切块食用，甜润不腻。"^^xsd:string ;
+    cdf:cuisineFlavor "甜润清凉"^^xsd:string ;
+    schema:recipeIngredient cdf:IN004, cdf:IN013, cdf:IN006, cdf:IN026 ;
+    cdf:associatedWithSkill cdf:H28 .
+
+cdf:DI009 a cdf:Recipe ;
+    cdf:dishId "DI009"^^xsd:string ;
+    dct:title "夫妻肺片"^^xsd:string ;
+    dct:description "20世纪30年代郭朝华夫妇创于成都，以牛头皮、牛心、牛舌等卤制后切片拌红油调料，麻辣浓香。"^^xsd:string ;
+    cdf:cuisineFlavor "麻辣浓香"^^xsd:string ;
+    schema:recipeIngredient cdf:IN014, cdf:IN015, cdf:IN016, cdf:IN045, cdf:IN048, cdf:IN046, cdf:IN049, cdf:IN050 ;
+    cdf:associatedWithSkill cdf:H37 ;
+    cdf:servedAt cdf:R007 .
+
+cdf:DI010 a cdf:Recipe ;
+    cdf:dishId "DI010"^^xsd:string ;
+    dct:title "担担面"^^xsd:string ;
+    dct:description "1841年陈包包创于自贡，后传入成都，以细面配肉臊、红油、芽菜、花椒面，味浓香辣。"^^xsd:string ;
+    cdf:cuisineFlavor "麻辣咸鲜"^^xsd:string ;
+    schema:recipeIngredient cdf:IN017, cdf:IN018, cdf:IN045, cdf:IN046, cdf:IN049, cdf:IN050 .
+
+cdf:DI011 a cdf:Recipe ;
+    cdf:dishId "DI011"^^xsd:string ;
+    dct:title "龙抄手"^^xsd:string ;
+    dct:description "1941年创于成都春熙路，取“浓花茶园”谐音‘龙’，皮薄馅嫩，汤鲜味美。"^^xsd:string ;
+    cdf:cuisineFlavor "鲜香清淡"^^xsd:string ;
+    schema:recipeIngredient cdf:IN027, cdf:IN028, cdf:IN029, cdf:IN042, cdf:IN056 ;
+    cdf:associatedWithSkill cdf:H36 ;
+    cdf:servedAt cdf:R006 .
+
+cdf:DI012 a cdf:Recipe ;
+    cdf:dishId "DI012"^^xsd:string ;
+    dct:title "三大炮"^^xsd:string ;
+    dct:description "成都传统小吃，糯米蒸熟摏打成团，抛掷时发出‘砰砰砰’三响，裹黄豆粉、红糖汁食用。"^^xsd:string ;
+    cdf:cuisineFlavor "甜糯弹牙"^^xsd:string ;
+    schema:recipeIngredient cdf:IN004, cdf:IN013, cdf:IN035, cdf:IN052 .
+
+cdf:DI013 a cdf:Recipe ;
+    cdf:dishId "DI013"^^xsd:string ;
+    dct:title "糖油果子"^^xsd:string ;
+    dct:description "又称‘天鹅蛋’，糯米粉搓球油炸后裹红糖汁、芝麻，外脆内软，甜香可口。"^^xsd:string ;
+    cdf:cuisineFlavor "甜香酥软"^^xsd:string ;
+    schema:recipeIngredient cdf:IN004, cdf:IN013, cdf:IN052, cdf:IN035 .
+
+cdf:DI014 a cdf:Recipe ;
+    cdf:dishId "DI014"^^xsd:string ;
+    dct:title "韩包子"^^xsd:string ;
+    dct:description "1914年韩文华创于成都，皮薄馅大，汁多味鲜，尤以鲜肉包著称。"^^xsd:string ;
+    cdf:cuisineFlavor "鲜香多汁"^^xsd:string ;
+    schema:recipeIngredient cdf:IN027, cdf:IN028, cdf:IN029, cdf:IN042, cdf:IN056 ;
+    cdf:servedAt cdf:R010 .
+
+cdf:DI015 a cdf:Recipe ;
+    cdf:dishId "DI015"^^xsd:string ;
+    dct:title "珍珠圆子"^^xsd:string ;
+    dct:description "成都传统甜点，糯米粉包猪油黑芝麻馅，滚粘糯米粒蒸熟，形如珍珠，软糯香甜。"^^xsd:string ;
+    cdf:cuisineFlavor "甜润软糯"^^xsd:string ;
+    schema:recipeIngredient cdf:IN004, cdf:IN005, cdf:IN006, cdf:IN052, cdf:IN035 .
+
+cdf:DI016 a cdf:Recipe ;
+    cdf:dishId "DI016"^^xsd:string ;
+    dct:title "甜水面"^^xsd:string ;
+    dct:description "成都特色面食，手工粗面拌复制酱油、红油、芝麻酱，甜辣筋道。"^^xsd:string ;
+    cdf:cuisineFlavor "甜辣筋道"^^xsd:string ;
+    schema:recipeIngredient cdf:IN017, cdf:IN042, cdf:IN043, cdf:IN045, cdf:IN051, cdf:IN052 .
+
+cdf:DI017 a cdf:Recipe ;
+    cdf:dishId "DI017"^^xsd:string ;
+    dct:title "锅盔"^^xsd:string ;
+    dct:description "成都军屯锅盔为代表，酥皮夹肉馅，炭火烤制，外酥里嫩，香气扑鼻。"^^xsd:string ;
+    cdf:cuisineFlavor "咸香酥脆"^^xsd:string ;
+    schema:recipeIngredient cdf:IN027, cdf:IN008, cdf:IN026, cdf:IN052 .
+
+cdf:DI018 a cdf:Recipe ;
+    cdf:dishId "DI018"^^xsd:string ;
+    dct:title "豆花"^^xsd:string ;
+    dct:description "成都豆花分甜咸两味，咸豆花配红油、豆豉、榨菜，滑嫩鲜香。"^^xsd:string ;
+    cdf:cuisineFlavor "滑嫩鲜香"^^xsd:string ;
+    schema:recipeIngredient cdf:IN012, cdf:IN045, cdf:IN047, cdf:IN048 .
+
+cdf:DI019 a cdf:Recipe ;
+    cdf:dishId "DI019"^^xsd:string ;
+    dct:title "冒菜"^^xsd:string ;
+    dct:description "成都街头快餐，自选食材焯烫后浇秘制红油汤底，一菜一格，百菜百味。"^^xsd:string ;
+    cdf:cuisineFlavor "麻辣鲜香"^^xsd:string ;
+    schema:recipeIngredient cdf:IN069, cdf:IN070, cdf:IN071, cdf:IN072, cdf:IN073,
+        cdf:IN089, cdf:IN090, cdf:IN091, cdf:IN092, cdf:IN093, cdf:IN094,
+        cdf:IN095, cdf:IN096, cdf:IN097, cdf:IN098, cdf:IN099, cdf:IN100,
+        cdf:IN101, cdf:IN102, cdf:IN103, cdf:IN104, cdf:IN105, cdf:IN106,
+        cdf:IN107, cdf:IN108, cdf:IN109, cdf:IN110, cdf:IN111, cdf:IN112,
+        cdf:IN113, cdf:IN114, cdf:IN115, cdf:IN116, cdf:IN117, cdf:IN118,
+        cdf:IN045, cdf:IN009, cdf:IN010, cdf:IN026 .
+
+cdf:DI020 a cdf:Recipe ;
+    cdf:dishId "DI020"^^xsd:string ;
+    dct:title "串串香"^^xsd:string ;
+    dct:description "起源于成都，食材穿串煮熟后蘸料食用，分冷锅热锅，麻辣过瘾。"^^xsd:string ;
+    cdf:cuisineFlavor "麻辣过瘾"^^xsd:string ;
+    schema:recipeIngredient cdf:IN069, cdf:IN070, cdf:IN071, cdf:IN072, cdf:IN073,
+        cdf:IN089, cdf:IN090, cdf:IN091, cdf:IN092, cdf:IN093, cdf:IN094,
+        cdf:IN095, cdf:IN096, cdf:IN097, cdf:IN098, cdf:IN099, cdf:IN100,
+        cdf:IN101, cdf:IN102, cdf:IN103, cdf:IN104, cdf:IN105, cdf:IN106,
+        cdf:IN107, cdf:IN108, cdf:IN109, cdf:IN110, cdf:IN111, cdf:IN112,
+        cdf:IN113, cdf:IN114, cdf:IN115, cdf:IN116, cdf:IN117, cdf:IN118,
+        cdf:IN045, cdf:IN009, cdf:IN010, cdf:IN026 .
+
+cdf:DI021 a cdf:Recipe ;
+    cdf:dishId "DI021"^^xsd:string ;
+    dct:title "钵钵鸡"^^xsd:string ;
+    dct:description "乐山起源，成都流行，鸡肉及蔬菜串煮后泡入藤椒或红油冷汤，麻辣鲜香。"^^xsd:string ;
+    cdf:cuisineFlavor "麻辣鲜香"^^xsd:string ;
+    schema:recipeIngredient cdf:IN088, cdf:IN089, cdf:IN090, cdf:IN091, cdf:IN092,
+        cdf:IN045, cdf:IN085, cdf:IN026, cdf:IN052, cdf:IN057 .
+
+cdf:DI022 a cdf:Recipe ;
+    cdf:dishId "DI022"^^xsd:string ;
+    dct:title "蹄花汤"^^xsd:string ;
+    dct:description "成都夜宵代表，猪蹄慢炖至软烂，汤白味浓，配芸豆或酸菜，滋补养颜。"^^xsd:string ;
+    cdf:cuisineFlavor "醇厚滋补"^^xsd:string ;
+    schema:recipeIngredient cdf:IN086, cdf:IN077, cdf:IN078, cdf:IN026, cdf:IN054, cdf:IN055 .
+
+cdf:DI023 a cdf:Recipe ;
+    cdf:dishId "DI023"^^xsd:string ;
+    dct:title "肥肠粉"^^xsd:string ;
+    dct:description "成都街头名小吃，红薯粉配卤肥肠、红油、酸菜、黄豆，酸辣爽口。"^^xsd:string ;
+    cdf:cuisineFlavor "酸辣爽口"^^xsd:string ;
+    schema:recipeIngredient cdf:IN079, cdf:IN080, cdf:IN045, cdf:IN047, cdf:IN035, cdf:IN026 .
+
+cdf:DI024 a cdf:Recipe ;
+    cdf:dishId "DI024"^^xsd:string ;
+    dct:title "蛋烘糕"^^xsd:string ;
+    dct:description "1823年创于成都，米浆烘烤成小饼，夹奶油、果酱或肉松，外酥内软。"^^xsd:string ;
+    cdf:cuisineFlavor "外酥内软"^^xsd:string ;
+    schema:recipeIngredient cdf:IN074, cdf:IN075, cdf:IN076, cdf:IN064, cdf:IN065, cdf:IN066, cdf:IN052 .
+
+cdf:DI025 a cdf:Recipe ;
+    cdf:dishId "DI025"^^xsd:string ;
+    dct:title "军屯锅盔"^^xsd:string ;
+    cdf:cuisineFlavor "咸香酥脆"^^xsd:string ;
+    dct:description "彭州军屯镇特产，千层酥皮包肉馅，炭火烤制，久放不软。"^^xsd:string ;
+    schema:recipeIngredient cdf:IN027, cdf:IN008, cdf:IN026, cdf:IN052 ;
+    cdf:servedAt cdf:R009 .
+
+cdf:DI026 a cdf:Recipe ;
+    cdf:dishId "DI026"^^xsd:string ;
+    dct:title "伤心凉粉"^^xsd:string ;
+    dct:description "起源于川南，成都流行，红薯凉粉拌大量辣椒、花椒、醋，辣到流泪故名。"^^xsd:string ;
+    cdf:cuisineFlavor "酸辣冲鼻"^^xsd:string ;
+    schema:recipeIngredient cdf:IN079, cdf:IN045, cdf:IN049, cdf:IN050, cdf:IN057, cdf:IN026 .
+
+cdf:DI027 a cdf:Recipe ;
+    cdf:dishId "DI027"^^xsd:string ;
+    dct:title "老妈兔头"^^xsd:string ;
+    dct:description "成都双流老妈兔头为代表，卤制后拌辣椒、花椒，麻辣入骨，啃食成风。"^^xsd:string ;
+    cdf:cuisineFlavor "麻辣入骨"^^xsd:string ;
+    schema:recipeIngredient cdf:IN087, cdf:IN045, cdf:IN049, cdf:IN050, cdf:IN026 ;
+    cdf:servedAt cdf:R008 .
+
+cdf:DI028 a cdf:Recipe ;
+    cdf:dishId "DI028"^^xsd:string ;
+    dct:title "棒棒鸡"^^xsd:string ;
+    dct:description "雅安起源，成都发扬，熟鸡腿肉用木棒敲松后拌红油调料，肉质细嫩。"^^xsd:string ;
+    cdf:cuisineFlavor "麻辣鲜嫩"^^xsd:string ;
+    schema:recipeIngredient cdf:IN082, cdf:IN045, cdf:IN049, cdf:IN050, cdf:IN026 .
+
+cdf:DI029 a cdf:Recipe ;
+    cdf:dishId "DI029"^^xsd:string ;
+    dct:title "宫保鸡丁"^^xsd:string ;
+    dct:description "清末总督丁宝桢创制，鸡丁、花生、干辣椒爆炒，糊辣荔枝味型。"^^xsd:string ;
+    cdf:cuisineFlavor "糊辣荔枝"^^xsd:string ;
+    schema:recipeIngredient cdf:IN083, cdf:IN041, cdf:IN084, cdf:IN026, cdf:IN052, cdf:IN057, cdf:IN053 .
+
+cdf:DI030 a cdf:Recipe ;
+    cdf:dishId "DI030"^^xsd:string ;
+    dct:title "回锅肉"^^xsd:string ;
+    dct:description "四川家常第一菜，煮熟五花肉切片回锅煸炒，配郫县豆瓣、青蒜，肥而不腻。"^^xsd:string ;
+    cdf:cuisineFlavor "咸鲜微辣"^^xsd:string ;
+    schema:recipeIngredient cdf:IN002, cdf:IN009, cdf:IN067, cdf:IN026, cdf:IN054, cdf:IN055 .
+
+cdf:DI031 a cdf:Recipe ;
+    cdf:dishId "DI031"^^xsd:string ;
+    dct:title "鱼香肉丝"^^xsd:string ;
+    dct:description "无鱼却有鱼香味，泡椒、姜蒜、糖醋调出复合味型，肉丝滑嫩。"^^xsd:string ;
+    cdf:cuisineFlavor "鱼香酸甜"^^xsd:string ;
+    schema:recipeIngredient cdf:IN083, cdf:IN068, cdf:IN054, cdf:IN055, cdf:IN052, cdf:IN057, cdf:IN026 .
+
+cdf:DI032 a cdf:Recipe ;
+    cdf:dishId "DI032"^^xsd:string ;
+    dct:title "水煮肉片"^^xsd:string ;
+    dct:description "源自自贡盐工菜，肉片、豆芽等铺底，淋热油激香辣椒花椒，麻辣滚烫。"^^xsd:string ;
+    cdf:cuisineFlavor "麻辣滚烫"^^xsd:string ;
+    schema:recipeIngredient cdf:IN083, cdf:IN089, cdf:IN045, cdf:IN084, cdf:IN010, cdf:IN026 .
+
+### ========== 食材 (Ingredient) ==========
+
+cdf:IN001 a cdf:Ingredient ; cdf:ingredientId "IN001"^^xsd:string ; schema:name "牛杂"^^xsd:string .
+cdf:IN002 a cdf:Ingredient ; cdf:ingredientId "IN002"^^xsd:string ; schema:name "五花肉"^^xsd:string .
+cdf:IN003 a cdf:Ingredient ; cdf:ingredientId "IN003"^^xsd:string ; schema:name "宜宾芽菜"^^xsd:string .
+cdf:IN004 a cdf:Ingredient ; cdf:ingredientId "IN004"^^xsd:string ; schema:name "糯米粉"^^xsd:string .
+cdf:IN005 a cdf:Ingredient ; cdf:ingredientId "IN005"^^xsd:string ; schema:name "黑芝麻"^^xsd:string .
+cdf:IN006 a cdf:Ingredient ; cdf:ingredientId "IN006"^^xsd:string ; schema:name "猪油"^^xsd:string .
+cdf:IN007 a cdf:Ingredient ; cdf:ingredientId "IN007"^^xsd:string ; schema:name "豆腐"^^xsd:string .
+cdf:IN008 a cdf:Ingredient ; cdf:ingredientId "IN008"^^xsd:string ; schema:name "牛肉末"^^xsd:string .
+cdf:IN009 a cdf:Ingredient ; cdf:ingredientId "IN009"^^xsd:string ; schema:name "郫县豆瓣"^^xsd:string .
+cdf:IN010 a cdf:Ingredient ; cdf:ingredientId "IN010"^^xsd:string ; schema:name "花椒"^^xsd:string .
+cdf:IN011 a cdf:Ingredient ; cdf:ingredientId "IN011"^^xsd:string ; schema:name "簝叶"^^xsd:string .
+cdf:IN012 a cdf:Ingredient ; cdf:ingredientId "IN012"^^xsd:string ; schema:name "豆浆"^^xsd:string .
+cdf:IN013 a cdf:Ingredient ; cdf:ingredientId "IN013"^^xsd:string ; schema:name "红糖"^^xsd:string .
+cdf:IN014 a cdf:Ingredient ; cdf:ingredientId "IN014"^^xsd:string ; schema:name "牛头皮"^^xsd:string .
+cdf:IN015 a cdf:Ingredient ; cdf:ingredientId "IN015"^^xsd:string ; schema:name "牛心"^^xsd:string .
+cdf:IN016 a cdf:Ingredient ; cdf:ingredientId "IN016"^^xsd:string ; schema:name "牛舌"^^xsd:string .
+cdf:IN017 a cdf:Ingredient ; cdf:ingredientId "IN017"^^xsd:string ; schema:name "细面"^^xsd:string .
+cdf:IN018 a cdf:Ingredient ; cdf:ingredientId "IN018"^^xsd:string ; schema:name "肉臊"^^xsd:string .
+cdf:IN019 a cdf:Ingredient ; cdf:ingredientId "IN019"^^xsd:string ; schema:name "八角"^^xsd:string .
+cdf:IN020 a cdf:Ingredient ; cdf:ingredientId "IN020"^^xsd:string ; schema:name "桂皮"^^xsd:string .
+cdf:IN021 a cdf:Ingredient ; cdf:ingredientId "IN021"^^xsd:string ; schema:name "香叶"^^xsd:string .
+cdf:IN022 a cdf:Ingredient ; cdf:ingredientId "IN022"^^xsd:string ; schema:name "小茴香"^^xsd:string .
+cdf:IN023 a cdf:Ingredient ; cdf:ingredientId "IN023"^^xsd:string ; schema:name "草果"^^xsd:string .
+cdf:IN024 a cdf:Ingredient ; cdf:ingredientId "IN024"^^xsd:string ; schema:name "砂仁"^^xsd:string .
+cdf:IN025 a cdf:Ingredient ; cdf:ingredientId "IN025"^^xsd:string ; schema:name "陈皮"^^xsd:string .
+cdf:IN026 a cdf:Ingredient ; cdf:ingredientId "IN026"^^xsd:string ; schema:name "盐"^^xsd:string .
+cdf:IN027 a cdf:Ingredient ; cdf:ingredientId "IN027"^^xsd:string ; schema:name "面粉"^^xsd:string .
+cdf:IN028 a cdf:Ingredient ; cdf:ingredientId "IN028"^^xsd:string ; schema:name "猪肉馅"^^xsd:string .
+cdf:IN029 a cdf:Ingredient ; cdf:ingredientId "IN029"^^xsd:string ; schema:name "葱姜"^^xsd:string .
+cdf:IN030 a cdf:Ingredient ; cdf:ingredientId "IN030"^^xsd:string ; schema:name "当归"^^xsd:string .
+cdf:IN031 a cdf:Ingredient ; cdf:ingredientId "IN031"^^xsd:string ; schema:name "党参"^^xsd:string .
+cdf:IN032 a cdf:Ingredient ; cdf:ingredientId "IN032"^^xsd:string ; schema:name "黄芪"^^xsd:string .
+cdf:IN033 a cdf:Ingredient ; cdf:ingredientId "IN033"^^xsd:string ; schema:name "红枣"^^xsd:string .
+cdf:IN034 a cdf:Ingredient ; cdf:ingredientId "IN034"^^xsd:string ; schema:name "枸杞"^^xsd:string .
+cdf:IN035 a cdf:Ingredient ; cdf:ingredientId "IN035"^^xsd:string ; schema:name "黄豆"^^xsd:string .
+cdf:IN036 a cdf:Ingredient ; cdf:ingredientId "IN036"^^xsd:string ; schema:name "绿豆"^^xsd:string .
+cdf:IN037 a cdf:Ingredient ; cdf:ingredientId "IN037"^^xsd:string ; schema:name "红豆"^^xsd:string .
+cdf:IN038 a cdf:Ingredient ; cdf:ingredientId "IN038"^^xsd:string ; schema:name "莲子"^^xsd:string .
+cdf:IN039 a cdf:Ingredient ; cdf:ingredientId "IN039"^^xsd:string ; schema:name "百合"^^xsd:string .
+cdf:IN040 a cdf:Ingredient ; cdf:ingredientId "IN040"^^xsd:string ; schema:name "核桃"^^xsd:string .
+cdf:IN041 a cdf:Ingredient ; cdf:ingredientId "IN041"^^xsd:string ; schema:name "花生"^^xsd:string .
+cdf:IN042 a cdf:Ingredient ; cdf:ingredientId "IN042"^^xsd:string ; schema:name "酱油"^^xsd:string .
+cdf:IN043 a cdf:Ingredient ; cdf:ingredientId "IN043"^^xsd:string ; schema:name "复制甜酱油"^^xsd:string .
+cdf:IN044 a cdf:Ingredient ; cdf:ingredientId "IN044"^^xsd:string ; schema:name "蒜泥"^^xsd:string .
+cdf:IN045 a cdf:Ingredient ; cdf:ingredientId "IN045"^^xsd:string ; schema:name "红油"^^xsd:string .
+cdf:IN046 a cdf:Ingredient ; cdf:ingredientId "IN046"^^xsd:string ; schema:name "芽菜"^^xsd:string .
+cdf:IN047 a cdf:Ingredient ; cdf:ingredientId "IN047"^^xsd:string ; schema:name "榨菜"^^xsd:string .
+cdf:IN048 a cdf:Ingredient ; cdf:ingredientId "IN048"^^xsd:string ; schema:name "豆豉"^^xsd:string .
+cdf:IN049 a cdf:Ingredient ; cdf:ingredientId "IN049"^^xsd:string ; schema:name "辣椒面"^^xsd:string .
+cdf:IN050 a cdf:Ingredient ; cdf:ingredientId "IN050"^^xsd:string ; schema:name "花椒面"^^xsd:string .
+cdf:IN051 a cdf:Ingredient ; cdf:ingredientId "IN051"^^xsd:string ; schema:name "芝麻酱"^^xsd:string .
+cdf:IN052 a cdf:Ingredient ; cdf:ingredientId "IN052"^^xsd:string ; schema:name "白糖"^^xsd:string .
+cdf:IN053 a cdf:Ingredient ; cdf:ingredientId "IN053"^^xsd:string ; schema:name "料酒"^^xsd:string .
+cdf:IN054 a cdf:Ingredient ; cdf:ingredientId "IN054"^^xsd:string ; schema:name "姜"^^xsd:string .
+cdf:IN055 a cdf:Ingredient ; cdf:ingredientId "IN055"^^xsd:string ; schema:name "蒜"^^xsd:string .
+cdf:IN056 a cdf:Ingredient ; cdf:ingredientId "IN056"^^xsd:string ; schema:name "香油"^^xsd:string .
+cdf:IN057 a cdf:Ingredient ; cdf:ingredientId "IN057"^^xsd:string ; schema:name "醋"^^xsd:string .
+cdf:IN058 a cdf:Ingredient ; cdf:ingredientId "IN058"^^xsd:string ; schema:name "鸡精"^^xsd:string .
+cdf:IN059 a cdf:Ingredient ; cdf:ingredientId "IN059"^^xsd:string ; schema:name "味精"^^xsd:string .
+cdf:IN060 a cdf:Ingredient ; cdf:ingredientId "IN060"^^xsd:string ; schema:name "胡椒粉"^^xsd:string .
+cdf:IN061 a cdf:Ingredient ; cdf:ingredientId "IN061"^^xsd:string ; schema:name "淀粉"^^xsd:string .
+cdf:IN062 a cdf:Ingredient ; cdf:ingredientId "IN062"^^xsd:string ; schema:name "鸡蛋"^^xsd:string .
+cdf:IN063 a cdf:Ingredient ; cdf:ingredientId "IN063"^^xsd:string ; schema:name "牛奶"^^xsd:string .
+cdf:IN064 a cdf:Ingredient ; cdf:ingredientId "IN064"^^xsd:string ; schema:name "奶油"^^xsd:string .
+cdf:IN065 a cdf:Ingredient ; cdf:ingredientId "IN065"^^xsd:string ; schema:name "果酱"^^xsd:string .
+cdf:IN066 a cdf:Ingredient ; cdf:ingredientId "IN066"^^xsd:string ; schema:name "肉松"^^xsd:string .
+cdf:IN067 a cdf:Ingredient ; cdf:ingredientId "IN067"^^xsd:string ; schema:name "青蒜"^^xsd:string .
+cdf:IN068 a cdf:Ingredient ; cdf:ingredientId "IN068"^^xsd:string ; schema:name "泡椒"^^xsd:string .
+cdf:IN069 a cdf:Ingredient ; cdf:ingredientId "IN069"^^xsd:string ; schema:name "木耳"^^xsd:string .
+cdf:IN070 a cdf:Ingredient ; cdf:ingredientId "IN070"^^xsd:string ; schema:name "莴笋"^^xsd:string .
+cdf:IN071 a cdf:Ingredient ; cdf:ingredientId "IN071"^^xsd:string ; schema:name "土豆"^^xsd:string .
+cdf:IN072 a cdf:Ingredient ; cdf:ingredientId "IN072"^^xsd:string ; schema:name "藕"^^xsd:string .
+cdf:IN073 a cdf:Ingredient ; cdf:ingredientId "IN073"^^xsd:string ; schema:name "金针菇"^^xsd:string .
+cdf:IN074 a cdf:Ingredient ; cdf:ingredientId "IN074"^^xsd:string ; schema:name "小麦粉"^^xsd:string .
+cdf:IN075 a cdf:Ingredient ; cdf:ingredientId "IN075"^^xsd:string ; schema:name "水"^^xsd:string .
+cdf:IN076 a cdf:Ingredient ; cdf:ingredientId "IN076"^^xsd:string ; schema:name "食用碱"^^xsd:string .
+cdf:IN077 a cdf:Ingredient ; cdf:ingredientId "IN077"^^xsd:string ; schema:name "芸豆"^^xsd:string .
+cdf:IN078 a cdf:Ingredient ; cdf:ingredientId "IN078"^^xsd:string ; schema:name "酸菜"^^xsd:string .
+cdf:IN079 a cdf:Ingredient ; cdf:ingredientId "IN079"^^xsd:string ; schema:name "红薯粉"^^xsd:string .
+cdf:IN080 a cdf:Ingredient ; cdf:ingredientId "IN080"^^xsd:string ; schema:name "卤肥肠"^^xsd:string .
+cdf:IN081 a cdf:Ingredient ; cdf:ingredientId "IN081"^^xsd:string ; schema:name "黄豆芽"^^xsd:string .
+cdf:IN082 a cdf:Ingredient ; cdf:ingredientId "IN082"^^xsd:string ; schema:name "鸡腿肉"^^xsd:string .
+cdf:IN083 a cdf:Ingredient ; cdf:ingredientId "IN083"^^xsd:string ; schema:name "鸡胸肉"^^xsd:string .
+cdf:IN084 a cdf:Ingredient ; cdf:ingredientId "IN084"^^xsd:string ; schema:name "干辣椒"^^xsd:string .
+cdf:IN085 a cdf:Ingredient ; cdf:ingredientId "IN085"^^xsd:string ; schema:name "藤椒"^^xsd:string .
+cdf:IN086 a cdf:Ingredient ; cdf:ingredientId "IN086"^^xsd:string ; schema:name "猪蹄"^^xsd:string .
+cdf:IN087 a cdf:Ingredient ; cdf:ingredientId "IN087"^^xsd:string ; schema:name "兔头"^^xsd:string .
+cdf:IN088 a cdf:Ingredient ; cdf:ingredientId "IN088"^^xsd:string ; schema:name "鸡肉"^^xsd:string .
+cdf:IN089 a cdf:Ingredient ; cdf:ingredientId "IN089"^^xsd:string ; schema:name "豆芽"^^xsd:string .
+cdf:IN090 a cdf:Ingredient ; cdf:ingredientId "IN090"^^xsd:string ; schema:name "青笋"^^xsd:string .
+cdf:IN091 a cdf:Ingredient ; cdf:ingredientId "IN091"^^xsd:string ; schema:name "黄瓜"^^xsd:string .
+cdf:IN092 a cdf:Ingredient ; cdf:ingredientId "IN092"^^xsd:string ; schema:name "海带"^^xsd:string .
+cdf:IN093 a cdf:Ingredient ; cdf:ingredientId "IN093"^^xsd:string ; schema:name "豆腐皮"^^xsd:string .
+cdf:IN094 a cdf:Ingredient ; cdf:ingredientId "IN094"^^xsd:string ; schema:name "午餐肉"^^xsd:string .
+cdf:IN095 a cdf:Ingredient ; cdf:ingredientId "IN095"^^xsd:string ; schema:name "毛肚"^^xsd:string .
+cdf:IN096 a cdf:Ingredient ; cdf:ingredientId "IN096"^^xsd:string ; schema:name "鸭血"^^xsd:string .
+cdf:IN097 a cdf:Ingredient ; cdf:ingredientId "IN097"^^xsd:string ; schema:name "鹌鹑蛋"^^xsd:string .
+cdf:IN098 a cdf:Ingredient ; cdf:ingredientId "IN098"^^xsd:string ; schema:name "藕片"^^xsd:string .
+cdf:IN099 a cdf:Ingredient ; cdf:ingredientId "IN099"^^xsd:string ; schema:name "土豆片"^^xsd:string .
+cdf:IN100 a cdf:Ingredient ; cdf:ingredientId "IN100"^^xsd:string ; schema:name "金针菇"^^xsd:string .
+cdf:IN101 a cdf:Ingredient ; cdf:ingredientId "IN101"^^xsd:string ; schema:name "香菇"^^xsd:string .
+cdf:IN102 a cdf:Ingredient ; cdf:ingredientId "IN102"^^xsd:string ; schema:name "平菇"^^xsd:string .
+cdf:IN103 a cdf:Ingredient ; cdf:ingredientId "IN103"^^xsd:string ; schema:name "白菜"^^xsd:string .
+cdf:IN104 a cdf:Ingredient ; cdf:ingredientId "IN104"^^xsd:string ; schema:name "菠菜"^^xsd:string .
+cdf:IN105 a cdf:Ingredient ; cdf:ingredientId "IN105"^^xsd:string ; schema:name "生菜"^^xsd:string .
+cdf:IN106 a cdf:Ingredient ; cdf:ingredientId "IN106"^^xsd:string ; schema:name "茼蒿"^^xsd:string .
+cdf:IN107 a cdf:Ingredient ; cdf:ingredientId "IN107"^^xsd:string ; schema:name "油麦菜"^^xsd:string .
+cdf:IN108 a cdf:Ingredient ; cdf:ingredientId "IN108"^^xsd:string ; schema:name "西兰花"^^xsd:string .
+cdf:IN109 a cdf:Ingredient ; cdf:ingredientId "IN109"^^xsd:string ; schema:name "玉米"^^xsd:string .
+cdf:IN110 a cdf:Ingredient ; cdf:ingredientId "IN110"^^xsd:string ; schema:name "南瓜"^^xsd:string .
+cdf:IN111 a cdf:Ingredient ; cdf:ingredientId "IN111"^^xsd:string ; schema:name "山药"^^xsd:string .
+cdf:IN112 a cdf:Ingredient ; cdf:ingredientId "IN112"^^xsd:string ; schema:name "芋头"^^xsd:string .
+cdf:IN113 a cdf:Ingredient ; cdf:ingredientId "IN113"^^xsd:string ; schema:name "莲藕"^^xsd:string .
+cdf:IN114 a cdf:Ingredient ; cdf:ingredientId "IN114"^^xsd:string ; schema:name "胡萝卜"^^xsd:string .
+cdf:IN115 a cdf:Ingredient ; cdf:ingredientId "IN115"^^xsd:string ; schema:name "白萝卜"^^xsd:string .
+cdf:IN116 a cdf:Ingredient ; cdf:ingredientId "IN116"^^xsd:string ; schema:name "洋葱"^^xsd:string .
+cdf:IN117 a cdf:Ingredient ; cdf:ingredientId "IN117"^^xsd:string ; schema:name "大葱"^^xsd:string .
+cdf:IN118 a cdf:Ingredient ; cdf:ingredientId "IN118"^^xsd:string ; schema:name "香菜"^^xsd:string .
+cdf:IN119 a cdf:Ingredient ; cdf:ingredientId "IN119"^^xsd:string ; schema:name "甘草"^^xsd:string .
+cdf:IN120 a cdf:Ingredient ; cdf:ingredientId "IN120"^^xsd:string ; schema:name "丁香"^^xsd:string .
+cdf:IN121 a cdf:Ingredient ; cdf:ingredientId "IN121"^^xsd:string ; schema:name "良姜"^^xsd:string .
+cdf:IN122 a cdf:Ingredient ; cdf:ingredientId "IN122"^^xsd:string ; schema:name "白芷"^^xsd:string .
+cdf:IN123 a cdf:Ingredient ; cdf:ingredientId "IN123"^^xsd:string ; schema:name "砂仁"^^xsd:string .
+cdf:IN124 a cdf:Ingredient ; cdf:ingredientId "IN124"^^xsd:string ; schema:name "肉桂"^^xsd:string .
+cdf:IN125 a cdf:Ingredient ; cdf:ingredientId "IN125"^^xsd:string ; schema:name "小茴香籽"^^xsd:string .
+cdf:IN126 a cdf:Ingredient ; cdf:ingredientId "IN126"^^xsd:string ; schema:name "八角茴香"^^xsd:string .
+cdf:IN127 a cdf:Ingredient ; cdf:ingredientId "IN127"^^xsd:string ; schema:name "干姜"^^xsd:string .
+cdf:IN128 a cdf:Ingredient ; cdf:ingredientId "IN128"^^xsd:string ; schema:name "高粱酒"^^xsd:string .
+cdf:IN129 a cdf:Ingredient ; cdf:ingredientId "IN129"^^xsd:string ; schema:name "蚕豆"^^xsd:string .
+cdf:IN130 a cdf:Ingredient ; cdf:ingredientId "IN130"^^xsd:string ; schema:name "辣椒"^^xsd:string .
+
+### ========== 非遗技艺 (HeritageSkill) ==========
+
+
+cdf:H21 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-21"^^xsd:string ;
+    dct:title "豆瓣传统制作技艺（郫县豆瓣传统制作技艺）"^^xsd:string ;
+    cdf:associatedWithDish "郫县豆瓣", "牧马山豆瓣" ;
+    cdf:heritageLevel "00"^^xsd:string ;
+    cdf:declaringUnit "郫都区食品工业协会"^^xsd:string .
+
+cdf:H22 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-22"^^xsd:string ;
+    dct:title "腐乳酿造技艺（唐场豆腐乳制作技艺）"^^xsd:string ;
+    cdf:associatedWithDish "唐场豆腐乳", "蒲江豆腐乳" ;
+    cdf:heritageLevel "01"^^xsd:string ;
+    cdf:declaringUnit "四川唐桥食品有限公司"^^xsd:string .
+
+cdf:H24 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-24"^^xsd:string ;
+    dct:title "泡菜制作技艺（新繁泡菜传统制作技艺）"^^xsd:string ;
+    cdf:associatedWithDish "新繁泡菜" ;
+    cdf:heritageLevel "02"^^xsd:string ;
+    cdf:declaringUnit "新都区文化馆"^^xsd:string .
+
+cdf:H25 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-25"^^xsd:string ;
+    dct:title "蒲江米花糖制作技艺"^^xsd:string ;
+    cdf:associatedWithDish "蒲江米花糖" ;
+    cdf:heritageLevel "02"^^xsd:string ;
+    cdf:declaringUnit "成都派立食品有限公司"^^xsd:string .
+
+cdf:H26 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-26"^^xsd:string ;
+    dct:title "麻饼制作技艺（汤长发麻饼制作技艺）"^^xsd:string ;
+    cdf:associatedWithDish "汤长发麻饼" ;
+    cdf:heritageLevel "01"^^xsd:string ;
+    cdf:declaringUnit "崇州市文化馆"^^xsd:string .
+
+cdf:H27 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-27"^^xsd:string ;
+    dct:title "温江酥糖制作技艺"^^xsd:string ;
+    cdf:associatedWithDish "温江酥糖" ;
+    cdf:heritageLevel "02"^^xsd:string ;
+    cdf:declaringUnit "温江区文化馆"^^xsd:string .
+
+cdf:H28 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-28"^^xsd:string ;
+    dct:title "怀远三绝制作技艺"^^xsd:string ;
+    cdf:associatedWithDish "叶儿粑", "豆腐帘子", "怀远冻糕" ;
+    cdf:heritageLevel "01"^^xsd:string ;
+    cdf:declaringUnit "崇州市文化馆"^^xsd:string .
+
+cdf:H29 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-29"^^xsd:string ;
+    dct:title "辣椒传统加工技艺"^^xsd:string ;
+    cdf:associatedWithDish "陈大妈香脆椒", "熟油海椒", "六婆辣椒面" ;
+    cdf:heritageLevel "02"^^xsd:string ;
+    cdf:declaringUnit "四川省国旺食品有限公司"^^xsd:string .
+
+cdf:H30 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-30"^^xsd:string ;
+    dct:title "龙抄手传统制作技艺"^^xsd:string ;
+    cdf:associatedWithDish "龙抄手" ;
+    cdf:heritageLevel "02"^^xsd:string ;
+    cdf:declaringUnit "成都市饮食公司"^^xsd:string .
+
+cdf:H31 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-31"^^xsd:string ;
+    dct:title "豆腐菜肴制作技艺（陈麻婆豆腐制作技艺）"^^xsd:string ;
+    cdf:associatedWithDish "麻婆豆腐", "天回豆腐" ;
+    cdf:heritageLevel "01"^^xsd:string ;
+    cdf:declaringUnit "成都市饮食公司"^^xsd:string .
+
+cdf:H32 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-32"^^xsd:string ;
+    dct:title "赖汤圆传统制作技艺"^^xsd:string ;
+    cdf:associatedWithDish "赖汤圆" ;
+    cdf:heritageLevel "01"^^xsd:string ;
+    cdf:declaringUnit "成都市饮食公司"^^xsd:string .
+
+cdf:H33 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-33"^^xsd:string ;
+    dct:title "腌卤传统制作技艺"^^xsd:string ;
+    cdf:associatedWithDish "耗子洞腌卤", "盘飧市腌卤", "九尺板鸭", "清流板鸭", "温鸭子", "石观音板鸭", "双流老妈兔头", "冯记兔头", "鄫鸭子", "新繁板鸭", "蒋卤鹅", "青城山老腊肉" ;
+    cdf:heritageLevel "01"^^xsd:string ;
+    cdf:declaringUnit "成都市饮食公司"^^xsd:string .
+
+cdf:H34 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-34"^^xsd:string ;
+    dct:title "钟水饺传统制作技艺"^^xsd:string ;
+    cdf:associatedWithDish "钟水饺" ;
+    cdf:heritageLevel "01"^^xsd:string ;
+    cdf:declaringUnit "成都市饮食公司"^^xsd:string .
+
+cdf:H35 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-35"^^xsd:string ;
+    dct:title "夫妻肺片传统制作技艺"^^xsd:string ;
+    cdf:associatedWithDish "夫妻肺片" ;
+    cdf:heritageLevel "01"^^xsd:string ;
+    cdf:declaringUnit "成都市饮食公司"^^xsd:string .
+
+cdf:H36 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-36"^^xsd:string ;
+    dct:title "邹鲢鱼传统制作技艺"^^xsd:string ;
+    cdf:associatedWithDish "邹鲢鱼" ;
+    cdf:heritageLevel "01"^^xsd:string ;
+    cdf:declaringUnit "成都市饮食公司"^^xsd:string .
+
+cdf:H37 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-37"^^xsd:string ;
+    dct:title "羊肉汤传统制作技艺"^^xsd:string ;
+    cdf:associatedWithDish "秦川号羊肉汤", "简阳羊肉汤", "三岔羊肉汤", "黄甲羊肉汤" ;
+    cdf:heritageLevel "01"^^xsd:string ;
+    cdf:declaringUnit "简阳市文化馆"^^xsd:string .
+
+cdf:H38 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-38"^^xsd:string ;
+    dct:title "军屯锅魁制作技艺"^^xsd:string ;
+    cdf:associatedWithDish "军屯锅魁" ;
+    cdf:heritageLevel "01"^^xsd:string ;
+    cdf:declaringUnit "彭州市文化馆"^^xsd:string .
+
+cdf:H39 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-39"^^xsd:string ;
+    dct:title "石桥挂面制作技艺"^^xsd:string ;
+    cdf:associatedWithDish "石桥挂面" ;
+    cdf:heritageLevel "01"^^xsd:string ;
+    cdf:declaringUnit "简阳市文化馆"^^xsd:string .
+
+cdf:H40 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-40"^^xsd:string ;
+    dct:title "佛教素食制作技艺"^^xsd:string ;
+    cdf:associatedWithDish "佛教素食" ;
+    cdf:heritageLevel "01"^^xsd:string ;
+    cdf:declaringUnit "新都区文化馆"^^xsd:string .
+
+cdf:H44 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-44"^^xsd:string ;
+    dct:title "成都丁丁糖传统制作技艺"^^xsd:string ;
+    cdf:associatedWithDish "成都丁丁糖" ;
+    cdf:heritageLevel "02"^^xsd:string ;
+    cdf:declaringUnit "成都传统文化保护协会"^^xsd:string .
+
+cdf:H45 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-45"^^xsd:string ;
+    dct:title "糕点制作技艺"^^xsd:string ;
+    cdf:associatedWithDish "新都桂花糕", "协盛隆糕点", "文记糕点", "磁峰芝麻糕" ;
+    cdf:heritageLevel "02"^^xsd:string ;
+    cdf:declaringUnit "新都区文化馆"^^xsd:string .
+
+cdf:H46 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-46"^^xsd:string ;
+    dct:title "新都姜糖传统制作技艺"^^xsd:string ;
+    cdf:associatedWithDish "新都姜糖" ;
+    cdf:heritageLevel "02"^^xsd:string ;
+    cdf:declaringUnit "新都区文化馆"^^xsd:string .
+
+cdf:H47 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-47"^^xsd:string ;
+    dct:title "成都三大炮传统制作技艺"^^xsd:string ;
+    cdf:associatedWithDish "三大炮" ;
+    cdf:heritageLevel "02"^^xsd:string ;
+    cdf:declaringUnit "成都传统文化保护协会"^^xsd:string .
+
+cdf:H48 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-48"^^xsd:string ;
+    dct:title "成都火锅传统制作技艺"^^xsd:string ;
+    cdf:associatedWithDish "阳氏田鸭肠火锅", "清油火锅", "安西鱼头火锅", "火锅底料", "皇城坝清真牛肉火锅" ;
+    cdf:heritageLevel "01"^^xsd:string ;
+    cdf:declaringUnit "彭州市文化馆"^^xsd:string .
+
+cdf:H49 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-49"^^xsd:string ;
+    dct:title "禽蛋传统腌制技艺"^^xsd:string ;
+    cdf:associatedWithDish "徐皮蛋" ;
+    cdf:heritageLevel "02"^^xsd:string ;
+    cdf:declaringUnit "成都传统文化保护协会"^^xsd:string .
+
+cdf:H51 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-51"^^xsd:string ;
+    dct:title "韩包子制作技艺"^^xsd:string ;
+    cdf:associatedWithDish "韩包子" ;
+    cdf:heritageLevel "01"^^xsd:string ;
+    cdf:declaringUnit "成都九远饮食有限责任公司"^^xsd:string .
+
+cdf:H53 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-53"^^xsd:string ;
+    dct:title "成都灯影牛肉传统制作技艺"^^xsd:string ;
+    cdf:associatedWithDish "成都灯影牛肉" ;
+    cdf:heritageLevel "02"^^xsd:string ;
+    cdf:declaringUnit "青羊区文化馆"^^xsd:string .
+
+cdf:H54 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-54"^^xsd:string ;
+    dct:title "成都肥肠粉制作技艺（甘食记肥肠粉制作技艺）"^^xsd:string ;
+    cdf:associatedWithDish "成都肥肠粉" ;
+    cdf:heritageLevel "01"^^xsd:string ;
+    cdf:declaringUnit "四川省美食家协会"^^xsd:string .
+
+cdf:H59 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-59"^^xsd:string ;
+    dct:title "云龙水酥制作技艺"^^xsd:string ;
+    cdf:associatedWithDish "云龙水酥" ;
+    cdf:heritageLevel "02"^^xsd:string ;
+    cdf:declaringUnit "简阳市文化馆"^^xsd:string .
+
+cdf:H76 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-76"^^xsd:string ;
+    dct:title "鸡豆花制作技艺"^^xsd:string ;
+    cdf:associatedWithDish "鸡豆花" ;
+    cdf:heritageLevel "02"^^xsd:string ;
+    cdf:declaringUnit "四川省成都市饮食公司"^^xsd:string .
+
+cdf:H77 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-77"^^xsd:string ;
+    dct:title "干锅烹制技艺"^^xsd:string ;
+    cdf:associatedWithDish "干锅" ;
+    cdf:heritageLevel "02"^^xsd:string ;
+    cdf:declaringUnit "成都餐饮同业公会"^^xsd:string .
+
+cdf:H79 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-79"^^xsd:string ;
+    dct:title "三星云崖兔制作技艺"^^xsd:string ;
+    cdf:associatedWithDish "三星云崖兔" ;
+    cdf:heritageLevel "02"^^xsd:string ;
+    cdf:declaringUnit "成都传承世家食品有限公司"^^xsd:string .
+
+cdf:H80 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-80"^^xsd:string ;
+    dct:title "冒菜制作技艺"^^xsd:string ;
+    cdf:associatedWithDish "冒菜" ;
+    cdf:heritageLevel "02"^^xsd:string ;
+    cdf:declaringUnit "成都餐饮同业公会", "成都芙蓉树下餐饮管理咨询有限公司" .
+
+cdf:H81 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-81"^^xsd:string ;
+    dct:title "皇城坝牛肉饼制作技艺"^^xsd:string ;
+    cdf:associatedWithDish "皇城坝牛肉饼" ;
+    cdf:heritageLevel "02"^^xsd:string ;
+    cdf:declaringUnit "四川蕃坊清真食品有限公司"^^xsd:string .
+
+cdf:H82 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-82"^^xsd:string ;
+    dct:title "玉林串串香制作技艺"^^xsd:string ;
+    cdf:associatedWithDish "玉林串串香" ;
+    cdf:heritageLevel "02"^^xsd:string ;
+    cdf:declaringUnit "四川玉林串串香投资管理有限公司"^^xsd:string .
+
+cdf:H83 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-83"^^xsd:string ;
+    dct:title "伤心凉粉制作技艺"^^xsd:string ;
+    cdf:associatedWithDish "伤心凉粉" ;
+    cdf:heritageLevel "02"^^xsd:string ;
+    cdf:declaringUnit "四川省伤心食品连锁有限责任公司"^^xsd:string .
+
+cdf:H84 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-84"^^xsd:string ;
+    dct:title "天鹅蛋制作技艺"^^xsd:string ;
+    cdf:associatedWithDish "天鹅蛋" ;
+    cdf:heritageLevel "02"^^xsd:string ;
+    cdf:declaringUnit "龙泉驿区洛带镇李记天鹅蛋店"^^xsd:string .
+
+cdf:H85 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-85"^^xsd:string ;
+    dct:title "太和豆豉酿制技艺"^^xsd:string ;
+    cdf:associatedWithDish "太和豆豉" ;
+    cdf:heritageLevel "02"^^xsd:string ;
+    cdf:declaringUnit "成都太和坊食品股份有限公司"^^xsd:string .
+
+cdf:H86 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-86"^^xsd:string ;
+    dct:title "酱烧底料制作技艺"^^xsd:string ;
+    cdf:associatedWithDish "酱烧兔火锅" ;
+    cdf:heritageLevel "02"^^xsd:string ;
+    cdf:declaringUnit "成都聚酱兔公馆餐饮管理有限公司"^^xsd:string .
+
+cdf:H87 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-87"^^xsd:string ;
+    dct:title "温江公平红烧兔制作技艺"^^xsd:string ;
+    cdf:associatedWithDish "温江公平红烧兔" ;
+    cdf:heritageLevel "02"^^xsd:string ;
+    cdf:declaringUnit "成都奕辰峰餐饮管理有限公司"^^xsd:string .
+
+cdf:H88 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-88"^^xsd:string ;
+    dct:title "回锅肉烹制技艺（舒回锅烹制技艺）"^^xsd:string ;
+    cdf:associatedWithDish "回锅肉" ;
+    cdf:heritageLevel "02"^^xsd:string ;
+    cdf:declaringUnit "郫都区宴府酒楼"^^xsd:string .
+
+cdf:H89 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-89"^^xsd:string ;
+    dct:title "杨鸡肉制作技艺"^^xsd:string ;
+    cdf:associatedWithDish "杨鸡肉" ;
+    cdf:heritageLevel "02"^^xsd:string ;
+    cdf:declaringUnit "成都杨氏川味寻香餐饮管理有限公司"^^xsd:string .
+
+cdf:H90 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-90"^^xsd:string ;
+    dct:title "灌县白果炖鸡制作技艺"^^xsd:string ;
+    cdf:associatedWithDish "灌县白果炖鸡" ;
+    cdf:heritageLevel "02"^^xsd:string ;
+    cdf:declaringUnit "成都祥侬生态农业发展有限公司"^^xsd:string .
+
+cdf:H93 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-93"^^xsd:string ;
+    dct:title "天主堂鸡肉制作技艺"^^xsd:string ;
+    cdf:associatedWithDish "天主堂鸡肉" ;
+    cdf:heritageLevel "02"^^xsd:string ;
+    cdf:declaringUnit "成都轩飨记餐饮管理有限公司"^^xsd:string .
+
+cdf:H95 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-95"^^xsd:string ;
+    dct:title "粽子传统制作技艺（赵粽子制作技艺）"^^xsd:string ;
+    cdf:associatedWithDish "赵粽子" ;
+    cdf:heritageLevel "02"^^xsd:string ;
+    cdf:declaringUnit "成都宝辰食品有限公司"^^xsd:string .
+
+cdf:H96 a cdf:HeritageSkill ;
+    cdf:heritageId "Ⅷ-96"^^xsd:string ;
+    dct:title "大邑肥肠血旺制作技艺"^^xsd:string ;
+    cdf:associatedWithDish "大邑肥肠血旺" ;
+    cdf:heritageLevel "02"^^xsd:string ;
+    cdf:declaringUnit "成都品德尚餐饮服务有限公司"^^xsd:string .
+
+
+
+### ========== 餐馆 (Restaurant) ==========
+
+
+turtle
+编辑
+@prefix cdf: <https://meta-explorer.pub/cdfood#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cdf:R001 a cdf:Restaurant ;
+    cdf:restaurantId "R001"^^xsd:string ;
+    schema:name "冯四孃翘脚牛肉(春熙路店)"^^xsd:string ;
+    schema:address "成都市锦江区东御街18号"^^xsd:string .
+
+cdf:R002 a cdf:Restaurant ;
+    cdf:restaurantId "R002"^^xsd:string ;
+    schema:name "老方桌烂蹄花"^^xsd:string ;
+    schema:address "成都市锦江区东大街下东大街段36号"^^xsd:string .
+
+cdf:R003 a cdf:Restaurant ;
+    cdf:restaurantId "R003"^^xsd:string ;
+    schema:name "钟水饺(总府路店)"^^xsd:string ;
+    schema:address "成都市锦江区荔枝巷12号"^^xsd:string .
+
+cdf:R004 a cdf:Restaurant ;
+    cdf:restaurantId "R004"^^xsd:string ;
+    schema:name "西月城谭豆花"^^xsd:string ;
+    schema:address "成都市青羊区西月城街58号"^^xsd:string .
+
+cdf:R005 a cdf:Restaurant ;
+    cdf:restaurantId "R005"^^xsd:string ;
+    schema:name "陈麻婆豆腐(青华路旗舰店)"^^xsd:string ;
+    schema:address "成都市青羊区青华路10号附10-12号"^^xsd:string .
+
+cdf:R006 a cdf:Restaurant ;
+    cdf:restaurantId "R006"^^xsd:string ;
+    schema:name "唐叶儿粑（怀远镇文井北路店）"^^xsd:string ;
+    schema:address "成都市崇州市怀远镇文井北路50号"^^xsd:string .
+
+cdf:R007 a cdf:Restaurant ;
+    cdf:restaurantId "R007"^^xsd:string ;
+    schema:name "王二哥正宗怀远三绝(老店)"^^xsd:string ;
+    schema:address "成都市崇州市西前街63-69号"^^xsd:string .
+
+cdf:R008 a cdf:Restaurant ;
+    cdf:restaurantId "R008"^^xsd:string ;
+    schema:name "黄老实冻糕叶儿耙店"^^xsd:string ;
+    schema:address "成都市崇州市怀远镇川旅路221号"^^xsd:string .
+
+cdf:R009 a cdf:Restaurant ;
+    cdf:restaurantId "R009"^^xsd:string ;
+    schema:name "周乐全锅魁店"^^xsd:string ;
+    schema:address "成都市彭州市军乐镇军屯路131号"^^xsd:string .
+
+cdf:R010 a cdf:Restaurant ;
+    cdf:restaurantId "R010"^^xsd:string ;
+    schema:name "甘食记肥肠粉（春熙路店）"^^xsd:string ;
+    schema:address "成都市锦江区蓝光·香槟广场西南门旁(春熙路地铁站E2口旁)"^^xsd:string .
+
+cdf:R011 a cdf:Restaurant ;
+    cdf:restaurantId "R011"^^xsd:string ;
+    schema:name "云龙幸福居"^^xsd:string ;
+    schema:address "四川省简阳市云龙镇爱民村二组"^^xsd:string .
+
+cdf:R012 a cdf:Restaurant ;
+    cdf:restaurantId "R012"^^xsd:string ;
+    schema:name "明婷饭店"^^xsd:string ;
+    schema:address "成都市金牛区外曹家巷26号附15号"^^xsd:string .
+
+cdf:R013 a cdf:Restaurant ;
+    cdf:restaurantId "R013"^^xsd:string ;
+    schema:name "龙抄手(总店)"^^xsd:string ;
+    schema:address "成都市锦江区城守街63号"^^xsd:string .
+
+cdf:R014 a cdf:Restaurant ;
+    cdf:restaurantId "R014"^^xsd:string ;
+    schema:name "赖汤圆(总府路店)"^^xsd:string ;
+    schema:address "成都市锦江区总府路23号附2号"^^xsd:string .
+
+cdf:R015 a cdf:Restaurant ;
+    cdf:restaurantId "R015"^^xsd:string ;
+    schema:name "李长清三大炮(锦里店)"^^xsd:string ;
+    schema:address "成都市武侯区锦里九品街10号"^^xsd:string .
+
+cdf:R016 a cdf:Restaurant ;
+    cdf:restaurantId "R016"^^xsd:string ;
+    schema:name "夫妻肺片(总府路店)"^^xsd:string ;
+    schema:address "成都市锦江区总府路23号"^^xsd:string .
+
+cdf:R017 a cdf:Restaurant ;
+    cdf:restaurantId "R017"^^xsd:string ;
+    schema:name "玉林串串香(总店)"^^xsd:string ;
+    schema:address "成都市武侯区玉林街26号附23号"^^xsd:string .
+
+cdf:R018 a cdf:Restaurant ;
+    cdf:restaurantId "R018"^^xsd:string ;
+    schema:name "蒲江明月轩"^^xsd:string ;
+    schema:address "成都市蒲江县西来镇铜鼓村1组"^^xsd:string .
+
+cdf:R019 a cdf:Restaurant ;
+    cdf:restaurantId "R019"^^xsd:string ;
+    schema:name "天星酥糖(温江文化路店)"^^xsd:string ;
+    schema:address "成都市温江区柳城街道文化路128号"^^xsd:string .
+
+cdf:R020 a cdf:Restaurant ;
+    cdf:restaurantId "R020"^^xsd:string ;
+    schema:name "新都郭氏桂花糕"^^xsd:string ;
+    schema:address "成都市新都区桂湖西路123号"^^xsd:string .
+
+cdf:R021 a cdf:Restaurant ;
+    cdf:restaurantId "R021"^^xsd:string ;
+    schema:name "新都姜糖老作坊"^^xsd:string ;
+    schema:address "成都市新都区新繁镇繁清路88号"^^xsd:string .
+
+cdf:R022 a cdf:Restaurant ;
+    cdf:restaurantId "R022"^^xsd:string ;
+    schema:name "丁丁糖老铺(宽窄巷子店)"^^xsd:string ;
+    schema:address "成都市青羊区宽窄巷子井巷子22号"^^xsd:string .
+
+cdf:R023 a cdf:Restaurant ;
+    cdf:restaurantId "R023"^^xsd:string ;
+    schema:name "张飞牛肉(春熙路店)"^^xsd:string ;
+    schema:address "成都市锦江区春熙路北段88号"^^xsd:string .
+
+cdf:R024 a cdf:Restaurant ;
+    cdf:restaurantId "R024"^^xsd:string ;
+    schema:name "皇城坝清真牛肉火锅"^^xsd:string ;
+    schema:address "成都市青羊区东城根南街52号"^^xsd:string .
+
+cdf:R025 a cdf:Restaurant ;
+    cdf:restaurantId "R025"^^xsd:string ;
+    schema:name "文革葱葱卷·灌县小吃"^^xsd:string ;
+    schema:address "成都市都江堰市建设路234号"^^xsd:string .
+
+cdf:R026 a cdf:Restaurant ;
+    cdf:restaurantId "R026"^^xsd:string ;
+    schema:name "天鹅蛋(平乐古镇店)"^^xsd:string ;
+    schema:address "成都市邛崃市平乐镇长庆街102号"^^xsd:string .
+
+cdf:R027 a cdf:Restaurant ;
+    cdf:restaurantId "R027"^^xsd:string ;
+    schema:name "大邑刘鸡肉"^^xsd:string ;
+    schema:address "成都市大邑县晋原镇围城北路东段123号"^^xsd:string .
+
+cdf:R028 a cdf:Restaurant ;
+    cdf:restaurantId "R028"^^xsd:string ;
+    schema:name "双流冯记老妈兔头(青石桥总店)"^^xsd:string ;
+    schema:address "成都市锦江区青石桥北街3号"^^xsd:string .
+
+cdf:R029 a cdf:Restaurant ;
+    cdf:restaurantId "R029"^^xsd:string ;
+    schema:name "青白江区姚渡曾家寨子曾鸭子饭店"^^xsd:string ;
+    schema:address "成都市青白江区姚渡曾家寨子"^^xsd:string .
+
+cdf:R030 a cdf:Restaurant ;
+    cdf:restaurantId "R030"^^xsd:string ;
+    schema:name "新都区新繁镇王述根板鸭加工厂"^^xsd:string ;
+    schema:address "成都市新都区新繁镇"^^xsd:string .
+
+cdf:R031 a cdf:Restaurant ;
+    cdf:restaurantId "R031"^^xsd:string ;
+    schema:name "蒋卤鹅(阳光城店)"^^xsd:string ;
+    schema:address "成都市龙泉驿区同安街道锦星路111号"^^xsd:string .
+
+cdf:R032 a cdf:Restaurant ;
+    cdf:restaurantId "R032"^^xsd:string ;
+    schema:name "青城甲(青城山店）"^^xsd:string ;
+    schema:address "成都市都江堰市渠山路上元社区6组52号附2号"^^xsd:string .
+
+### ========== 人物 (Person) ==========
+
+cdf:MA001 a cdf:Person ;
+    cdf:personId "MA001"^^xsd:string ;
+    foaf:name "雷定成"^^xsd:string ;
+    foaf:jobTitle "国家级非遗传承人"^^xsd:string ;
+    dct:description "郫县豆瓣传统制作技艺国家级代表性传承人"^^xsd:string .
+
+cdf:MA002 a cdf:Person ;
+    cdf:personId "MA002"^^xsd:string ;
+    foaf:name "张安秋"^^xsd:string ;
+    foaf:jobTitle "国家级非遗传承人"^^xsd:string ;
+    dct:description "郫县豆瓣传统制作技艺国家级代表性传承人"^^xsd:string .
+
+cdf:MA003 a cdf:Person ;
+    cdf:personId "MA003"^^xsd:string ;
+    foaf:name "陈述承"^^xsd:string ;
+    foaf:jobTitle "省级非遗传承人"^^xsd:string ;
+    dct:description "郫县豆瓣传统制作技艺省级代表性传承人"^^xsd:string .
+
+cdf:MA004 a cdf:Person ;
+    cdf:personId "MA004"^^xsd:string ;
+    foaf:name "岳鹏"^^xsd:string ;
+    foaf:jobTitle "省级非遗传承人"^^xsd:string ;
+    dct:description "郫县豆瓣传统制作技艺省级代表性传承人"^^xsd:string .
+
+cdf:MA005 a cdf:Person ;
+    cdf:personId "MA005"^^xsd:string ;
+    foaf:name "黎世才"^^xsd:string ;
+    foaf:jobTitle "市级非遗传承人"^^xsd:string ;
+    dct:description "郫县豆瓣传统制作技艺市级代表性传承人"^^xsd:string .
+
+cdf:MA006 a cdf:Person ;
+    cdf:personId "MA006"^^xsd:string ;
+    foaf:name "邱玉龙"^^xsd:string ;
+    foaf:jobTitle "市级非遗传承人"^^xsd:string ;
+    dct:description "郫县豆瓣传统制作技艺市级代表性传承人"^^xsd:string .
+
+cdf:MA007 a cdf:Person ;
+    cdf:personId "MA007"^^xsd:string ;
+    foaf:name "郑昌海"^^xsd:string ;
+    foaf:jobTitle "市级非遗传承人"^^xsd:string ;
+    dct:description "郫县豆瓣传统制作技艺市级代表性传承人"^^xsd:string .
+
+cdf:MA008 a cdf:Person ;
+    cdf:personId "MA008"^^xsd:string ;
+    foaf:name "曾正元"^^xsd:string ;
+    foaf:jobTitle "市级非遗传承人"^^xsd:string ;
+    dct:description "郫县豆瓣传统制作技艺市级代表性传承人"^^xsd:string .
+
+cdf:MA009 a cdf:Person ;
+    cdf:personId "MA009"^^xsd:string ;
+    foaf:name "蔡立彬"^^xsd:string ;
+    foaf:jobTitle "市级非遗传承人"^^xsd:string ;
+    dct:description "郫县豆瓣传统制作技艺市级代表性传承人"^^xsd:string .
+
+cdf:MA010 a cdf:Person ;
+    cdf:personId "MA010"^^xsd:string ;
+    foaf:name "廖昌明"^^xsd:string ;
+    foaf:jobTitle "市级非遗传承人"^^xsd:string ;
+    dct:description "郫县豆瓣传统制作技艺市级代表性传承人"^^xsd:string .
+
+cdf:MA011 a cdf:Person ;
+    cdf:personId "MA011"^^xsd:string ;
+    foaf:name "张骏"^^xsd:string ;
+    foaf:jobTitle "市级非遗传承人"^^xsd:string ;
+    dct:description "郫县豆瓣传统制作技艺市级代表性传承人"^^xsd:string .
+
+cdf:MA012 a cdf:Person ;
+    cdf:personId "MA012"^^xsd:string ;
+    foaf:name "罗明武"^^xsd:string ;
+    foaf:jobTitle "市级非遗传承人"^^xsd:string ;
+    dct:description "新繁泡菜传统制作技艺市级代表性传承人"^^xsd:string .
+
+cdf:MA013 a cdf:Person ;
+    cdf:personId "MA013"^^xsd:string ;
+    foaf:name "王德元"^^xsd:string ;
+    foaf:jobTitle "市级非遗传承人"^^xsd:string ;
+    dct:description "蒲江米花糖制作技艺市级代表性传承人"^^xsd:string .
+
+cdf:MA014 a cdf:Person ;
+    cdf:personId "MA014"^^xsd:string ;
+    foaf:name "汤克阳"^^xsd:string ;
+    foaf:jobTitle "市级非遗传承人"^^xsd:string ;
+    dct:description "汤长发麻饼制作技艺市级代表性传承人"^^xsd:string .
+
+cdf:MA015 a cdf:Person ;
+    cdf:personId "MA015"^^xsd:string ;
+    foaf:name "汤晓梅"^^xsd:string ;
+    foaf:jobTitle "市级非遗传承人"^^xsd:string ;
+    dct:description "汤长发麻饼制作技艺市级代表性传承人"^^xsd:string .
+
+cdf:MA016 a cdf:Person ;
+    cdf:personId "MA016"^^xsd:string ;
+    foaf:name "汤永强"^^xsd:string ;
+    foaf:jobTitle "市级非遗传承人"^^xsd:string ;
+    dct:description "汤长发麻饼制作技艺市级代表性传承人"^^xsd:string .
+
+cdf:MA017 a cdf:Person ;
+    cdf:personId "MA017"^^xsd:string ;
+    foaf:name "唐君展"^^xsd:string ;
+    foaf:jobTitle "省级非遗传承人"^^xsd:string ;
+    dct:description "怀远三绝制作技艺省级代表性传承人"^^xsd:string .
+
+cdf:MA018 a cdf:Person ;
+    cdf:personId "MA018"^^xsd:string ;
+    foaf:name "唐映雪"^^xsd:string ;
+    foaf:jobTitle "市级非遗传承人"^^xsd:string ;
+    dct:description "怀远三绝制作技艺市级代表性传承人"^^xsd:string .
+
+cdf:MA019 a cdf:Person ;
+    cdf:personId "MA019"^^xsd:string ;
+    foaf:name "杨夏"^^xsd:string ;
+    foaf:jobTitle "市级非遗传承人"^^xsd:string ;
+    dct:description "陈大妈香脆椒传统制作技艺市级代表性传承人"^^xsd:string .
+
+cdf:MA020 a cdf:Person ;
+    cdf:personId "MA020"^^xsd:string ;
+    foaf:name "黄锡生"^^xsd:string ;
+    foaf:jobTitle "市级非遗传承人"^^xsd:string ;
+    dct:description "龙抄手传统制作技艺市级代表性传承人"^^xsd:string .
+
+cdf:MA021 a cdf:Person ;
+    cdf:personId "MA021"^^xsd:string ;
+    foaf:name "刘朝新"^^xsd:string ;
+    foaf:jobTitle "市级非遗传承人"^^xsd:string ;
+    dct:description "龙抄手传统制作技艺市级代表性传承人"^^xsd:string .
+
+cdf:MA022 a cdf:Person ;
+    cdf:personId "MA022"^^xsd:string ;
+    foaf:name "张盛跃"^^xsd:string ;
+    foaf:jobTitle "省级非遗传承人"^^xsd:string ;
+    dct:description "陈麻婆豆腐制作技艺省级代表性传承人"^^xsd:string .
+
+cdf:MA023 a cdf:Person ;
+    cdf:personId "MA023"^^xsd:string ;
+    foaf:name "汪林才"^^xsd:string ;
+    foaf:jobTitle "市级非遗传承人"^^xsd:string ;
+    dct:description "陈麻婆豆腐制作技艺市级代表性传承人"^^xsd:string .
+
+cdf:MA024 a cdf:Person ;
+    cdf:personId "MA024"^^xsd:string ;
+    foaf:name "何国正"^^xsd:string ;
+    foaf:jobTitle "市级非遗传承人"^^xsd:string ;
+    dct:description "陈麻婆豆腐制作技艺市级代表性传承人"^^xsd:string .
+
+cdf:MA025 a cdf:Person ;
+    cdf:personId "MA025"^^xsd:string ;
+    foaf:name "唐章流"^^xsd:string ;
+    foaf:jobTitle "省级非遗传承人"^^xsd:string ;
+    dct:description "赖汤圆传统制作技艺省级代表性传承人"^^xsd:string .
+
+cdf:MA026 a cdf:Person ;
+    cdf:personId "MA026"^^xsd:string ;
+    foaf:name "李明成"^^xsd:string ;
+    foaf:jobTitle "市级非遗传承人"^^xsd:string ;
+    dct:description "赖汤圆传统制作技艺市级代表性传承人"^^xsd:string .
+
+cdf:MA027 a cdf:Person ;
+    cdf:personId "MA027"^^xsd:string ;
+    foaf:name "卢有才"^^xsd:string ;
+    foaf:jobTitle "市级非遗传承人"^^xsd:string ;
+    dct:description "赖汤圆传统制作技艺市级代表性传承人"^^xsd:string .
+
+cdf:MA028 a cdf:Person ;
+    cdf:personId "MA028"^^xsd:string ;
+    foaf:name "陈信良"^^xsd:string ;
+    foaf:jobTitle "市级非遗传承人"^^xsd:string ;
+    dct:description "耗子洞腌卤传统制作技艺市级代表性传承人"^^xsd:string .
+
+cdf:MA029 a cdf:Person ;
+    cdf:personId "MA029"^^xsd:string ;
+    foaf:name "廖都成"^^xsd:string ;
+    foaf:jobTitle "市级非遗传承人"^^xsd:string ;
+    dct:description "耗子洞腌卤传统制作技艺市级代表性传承人"^^xsd:string .
+
+cdf:MA030 a cdf:Person ;
+    cdf:personId "MA030"^^xsd:string ;
+    foaf:name "石方刚"^^xsd:string ;
+    foaf:jobTitle "市级非遗传承人"^^xsd:string ;
+    dct:description "耗子洞腌卤传统制作技艺市级代表性传承人"^^xsd:string .
+
+cdf:MA031 a cdf:Person ;
+    cdf:personId "MA031"^^xsd:string ;
+    foaf:name "吕璘"^^xsd:string ;
+    foaf:jobTitle "市级非遗传承人"^^xsd:string ;
+    dct:description "盘飧市腌卤传统制作技艺市级代表性传承人"^^xsd:string .
+
+cdf:MA032 a cdf:Person ;
+    cdf:personId "MA032"^^xsd:string ;
+    foaf:name "蒋文"^^xsd:string ;
+    foaf:jobTitle "市级非遗传承人"^^xsd:string ;
+    dct:description "盘飧市腌卤传统制作技艺市级代表性传承人"^^xsd:string .
+
+cdf:MA033 a cdf:Person ;
+    cdf:personId "MA033"^^xsd:string ;
+    foaf:name "梁自忠"^^xsd:string ;
+    foaf:jobTitle "省级非遗传承人"^^xsd:string ;
+    dct:description "九尺板鸭传统制作技艺省级代表性传承人"^^xsd:string .
+
+cdf:MA034 a cdf:Person ;
+    cdf:personId "MA034"^^xsd:string ;
+    foaf:name "王忠述"^^xsd:string ;
+    foaf:jobTitle "市级非遗传承人"^^xsd:string ;
+    dct:description "清流板鸭传统制作技艺市级代表性传承人"^^xsd:string .
+
+cdf:MA035 a cdf:Person ;
+    cdf:personId "MA035"^^xsd:string ;
+    foaf:name "祝元清"^^xsd:string ;
+    foaf:jobTitle "省级非遗传承人"^^xsd:string ;
+    dct:description "钟水饺传统制作技艺省级代表性传承人"^^xsd:string .
+
+cdf:MA036 a cdf:Person ;
+    cdf:personId "MA036"^^xsd:string ;
+    foaf:name "袁康"^^xsd:string ;
+    foaf:jobTitle "市级非遗传承人"^^xsd:string ;
+    dct:description "钟水饺传统制作技艺市级代表性传承人"^^xsd:string .
+
+cdf:MA037 a cdf:Person ;
+    cdf:personId "MA037"^^xsd:string ;
+    foaf:name "王钦锐"^^xsd:string ;
+    foaf:jobTitle "省级非遗传承人"^^xsd:string ;
+    dct:description "夫妻肺片传统制作技艺省级代表性传承人"^^xsd:string .
+
+cdf:MA038 a cdf:Person ;
+    cdf:personId "MA038"^^xsd:string ;
+    foaf:name "罗小兵"^^xsd:string ;
+    foaf:jobTitle "市级非遗传承人"^^xsd:string ;
+    dct:description "夫妻肺片传统制作技艺市级代表性传承人"^^xsd:string .
+
+cdf:MA039 a cdf:Person ;
+    cdf:personId "MA039"^^xsd:string ;
+    foaf:name "黄志成"^^xsd:string ;
+    foaf:jobTitle "市级非遗传承人"^^xsd:string ;
+    dct:description "邹鲢鱼传统制作技艺市级代表性传承人"^^xsd:string .
+
+cdf:MA040 a cdf:Person ;
+    cdf:personId "MA040"^^xsd:string ;
+    foaf:name "黄志高"^^xsd:string ;
+    foaf:jobTitle "省级非遗传承人"^^xsd:string ;
+    dct:description "邹鲢鱼传统制作技艺省级代表性传承人"^^xsd:string .
+
+cdf:MA041 a cdf:Person ;
+    cdf:personId "MA041"^^xsd:string ;
+    foaf:name "雷菊花"^^xsd:string ;
+    foaf:jobTitle "市级非遗传承人"^^xsd:string ;
+    dct:description "简阳羊肉汤传统制作技艺市级代表性传承人"^^xsd:string .
+
+cdf:MA042 a cdf:Person ;
+    cdf:personId "MA042"^^xsd:string ;
+    foaf:name "马魁"^^xsd:string ;
+    foaf:jobTitle "省级非遗传承人"^^xsd:string ;
+    dct:description "简阳羊肉汤传统制作技艺省级代表性传承人"^^xsd:string .
+
+cdf:MA043 a cdf:Person ;
+    cdf:personId "MA043"^^xsd:string ;
+    foaf:name "赖天春"^^xsd:string ;
+    foaf:jobTitle "市级非遗传承人"^^xsd:string ;
+    dct:description "简阳羊肉汤传统制作技艺市级代表性传承人"^^xsd:string .
+
+cdf:MA044 a cdf:Person ;
+    cdf:personId "MA044"^^xsd:string ;
+    foaf:name "周乐全"^^xsd:string ;
+    foaf:jobTitle "省级非遗传承人"^^xsd:string ;
+    dct:description "军屯锅魁制作技艺省级代表性传承人"^^xsd:string .
+
+cdf:MA045 a cdf:Person ;
+    cdf:personId "MA045"^^xsd:string ;
+    foaf:name "潘小波"^^xsd:string ;
+    foaf:jobTitle "市级非遗传承人"^^xsd:string ;
+    dct:description "军屯锅魁制作技艺市级代表性传承人"^^xsd:string .
+
+cdf:MA046 a cdf:Person ;
+    cdf:personId "MA046"^^xsd:string ;
+    foaf:name "聂本廉"^^xsd:string ;
+    foaf:jobTitle "市级非遗传承人"^^xsd:string ;
+    dct:description "石桥挂面制作技艺市级代表性传承人"^^xsd:string .
+
+cdf:MA047 a cdf:Person ;
+    cdf:personId "MA047"^^xsd:string ;
+    foaf:name "王道彬"^^xsd:string ;
+    foaf:jobTitle "市级非遗传承人"^^xsd:string ;
+    dct:description "成都丁丁糖传统制作技艺市级代表性传承人"^^xsd:string .
+
+cdf:MA048 a cdf:Person ;
+    cdf:personId "MA048"^^xsd:string ;
+    foaf:name "李刚"^^xsd:string ;
+    foaf:jobTitle "市级非遗传承人"^^xsd:string ;
+    dct:description "成都三大炮传统制作技艺市级代表性传承人"^^xsd:string .
+
+cdf:MA049 a cdf:Person ;
+    cdf:personId "MA049"^^xsd:string ;
+    foaf:name "阳永强"^^xsd:string ;
+    foaf:jobTitle "省级非遗传承人"^^xsd:string ;
+    dct:description "阳氏田鸭肠火锅技艺省级代表性传承人"^^xsd:string .
+
+cdf:MA050 a cdf:Person ;
+    cdf:personId "MA050"^^xsd:string ;
+    foaf:name "甘乐"^^xsd:string ;
+    foaf:jobTitle "市级非遗传承人"^^xsd:string ;
+    dct:description "甘食记肥肠粉制作技艺市级代表性传承人"^^xsd:string .
